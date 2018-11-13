@@ -1,3 +1,4 @@
+require 'pry'
 
 class Dog
 
@@ -9,8 +10,11 @@ class Dog
     @@all << self
   end
 
-  def self.all
-    @@all.each {|name| puts "#{name}"}
+  def all
+    @@all.each do |name|
+  binding.pry
+      puts self.name
+      end
   end
 
   def self.clear_all
