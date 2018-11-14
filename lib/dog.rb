@@ -18,12 +18,12 @@ class Dog
     end
   end
 
-# alternate way to code 'all' method
-  def self.name_all
-    @@names.each do |name|
-      puts "#{name}"
-    end
-  end
+## alternate way to code 'all' method
+#  def self.name_all
+#    @@names.each do |name|
+#      puts "#{name}"
+#    end
+#  end
 
   def self.clear_all
     @@all.clear
