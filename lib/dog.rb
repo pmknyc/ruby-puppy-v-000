@@ -13,13 +13,19 @@ class Dog
   end
 
   def self.all
+    @@all.each do |name|
+      puts "#{self.name}"
+    end
+  end
+
+  def self.name_all
     @@names.each do |name|
       puts "#{name}"
-    binding.pry
     end
   end
 
   def self.clear_all
     @@all.clear
   end
+# class end below
 end
