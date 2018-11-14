@@ -18,6 +18,7 @@ class Dog
     end
   end
 
+# alternate way to code 'all' method
   def self.name_all
     @@names.each do |name|
       puts "#{name}"
